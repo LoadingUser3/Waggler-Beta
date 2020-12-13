@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<!--The purpose of this page is to have a purchase form when the user clicks on "purchase" in the packages section. Here, they will fill out all of the fields and click on "Purchase" to finalize their purchase.-->
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0, user-scalable = yes">
+
+<title>Purchase</title>
+
+<style>
+
+.cusinfo {
+	font-size:22px; 
+	text-align:center; 
+	background-color:lavender;
+	}
+
+@media only screen and (max-width: 1200px) {
+
+	.cusinfo {
+	font-size:18px; 
+	text-align:left; 
+	background-color:lavender;
+	}
+
+	input {
+	width: 100%;
+	margin: 100px, 0;
+	}
+}
+
+</style>
+
+<!--@.cusinfo and @input: Without the changes made above, the webpage will display the fields very irregularly. This change allows the user to see the fields clearly and navigate through them effectively. -->
+
+</head>
+
+<body class = "cusinfo">
+
+<h3>Customer information</h3>
+
+<!--This section is a sample of a purchase. It doesn't actually record the information provided; it is only a draft of what this purchase page will look like -->
+
+<br>
+
+<form>
+	Payment Method:
+
+	<select name="card types">
+
+		<option value="American Express">American Express</option>
+		<option value="Visa">Visa</option>
+		<option value="MasterCard">MasterCard</option>
+		<option value="Discover">Discover</option>
+
+	</select>
+	
+	<br>
+	
+	<br>
+
+	Card Number:
+
+		<input type="text" name="cardnumber">
+
+	<br>
+	
+	<br>
+
+	First Name:
+
+		<input type="text" name="firstname">
+	
+	Last Name:
+
+		<input type="text" name="lastname">
+
+	<br>
+	
+	<br>
+
+	City:
+
+		<input type="text" name="City">
+
+	State:
+
+		<input type="text" name="state">
+
+	<br>
+	
+	<br>
+
+	Billing Address:
+
+		<input type="text" name="billing">
+
+	Country:
+
+		<input type="text" name="country">
+
+	<br>
+	
+	<br>
+
+	Zip or Postal Code:
+
+		<input type="text" name="zip">
+
+	Phone Number:
+
+		<input type="text" name="phonenumber">
+
+	<br>
+	
+	<br>
+
+		<center><button type="button" onclick="alert('Purchase Sucessful!')">Purchase</button></center>
+	
+	<br>
+	
+	<br>
+
+	<a href="MainPage.html"><center>Return to the main page</center></a>
+
+<!--Separation with two <br> gave enough spacing between fields to have them be more readable-->
+
+
+</body>
+
+</html>

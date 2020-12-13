@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<!--Note: Whenever I try to add comments in specific sections of my code (such as the style section), the rest of that section no longer works and I was forced to move multiple comments into one area in some points. I apologize if it makes the code seem disorganized or inconvienent-->
+
+<html>
+
+<head>
+
+<link rel="icon" href="Waggle.jpg">
+
+<title>The Waggle Company</title>
+
+<meta charset="UTF-8">
+
+
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0, user-scalable = yes">
+
+<!--This style section has been updated to contain different classes for different sections of the webapage. It seemed more effective than having one universal class, especially when editing the class to be more compatible with mobile view.-->
+
+<style>
+
+body {
+	background-color:lavender;
+}
+
+p {
+	text-align: center;
+	margin-right: 150px; 
+	margin-left: 150px;
+	font-size:20px;
+}
+
+h1, h2, h3 {
+	text-align:center;
+}
+
+h2 {
+	color:darkorchid;
+	text-decoration:underline overline;
+}
+
+h3 {
+	font-style:italic;
+}
+
+table {
+	font-family:arial;
+	border-collapse: collapse;
+	width:100%;
+}
+
+td, th {
+	border: 2px solid black;
+	text-align: center;
+	padding: 2px;
+}
+
+.navi {
+	background-color:lightcyan;
+}
+
+.how {
+	background-color:cornsilk;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	font-size:20px;
+}
+
+.package {
+
+	text-align:center;
+	
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.faq {
+	background-color:lightblue;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+.aboutme {
+	text-align:center; 
+	font-size:18px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	p {
+		margin-right: 10px; 
+		margin-left: 10px;
+		font-size:22px;
+	}
+
+	.navi {
+		background-color:lightcyan;
+	}
+
+	.how {
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 100%;
+		font-size:20px;
+	}
+	.center {
+		font-size:20px;
+		width: 50%;
+	}
+
+	.faq {
+		width: 100%;
+	}
+
+	.aboutme {
+		text-align:center; 
+		font-size:18px;
+	}
+
+	img {
+		width:95%;
+	}
+
+}
+
+<!--Having most of the text at the center of the page seemed neater than having it come from the left margin, which is why most of the elements have a center align attribute.-->
+
+<!--@.center class is meant for general purpose centering in this html webpage. This used to be a universal class for each section, but it became cumbersome to have specific edits of each section.-->
+
+<!--Besides size, I thought there should be something else that differentiates between the headings. So I made the major headings underlined and red and the minor headings italicized.-->
+
+<!--@media only contains classes that have been changed. These classes have been changed in order to more properly fit a handheld device. For instance, the width if the .how and .faq sections fill the screen because spacing out these text blocks would make the text itself too crunched together. Similarly, images had to be resized to fit a handheld by stretching it out.-->
+
+</style>
+
+</head>
+
+
+<!--The Header-->
+
+<!--Users should be able to jump to different sections of a site using a navigation menu on the top of the page. The below table will give users easy access to the different sections of the site.-->
+
+<header>
+
+<h1 id="Top">The Waggle Company</h1>
+
+<div class = "navi">	
+
+	<table>
+
+		<th><a href = "#Packages">Care Package</a></th>
+		<th><a href = "#FAQ">FAQ</a></th>
+		<th><a href = "#AboutMe">About Me</a></th>
+		<th><a href = "Contact.html">Contact Us</a></th>
+
+	</table>
+
+</div>
+
+</header>
+
+<!--The color of the navigation menu is different from the color of the site background in order to easily separate it from the rest of the site. A user can quickly identify the navigation menu when scrolling through the site.-->
+
+<hr>
+
+<!--Company Mission-->
+
+<!--A section that briefly describes the company and the business they are providing. -->
+
+<h2>About Us</h2>
+
+<div>
+
+	<p>We are the Wagglers! We are a small company that enjoys taking care of dogs. Our mission is to help owners that either may be too busy or have other circumstances that will prevent them from taking care of their companions. We treat companions as if they are a part of our own family. Our "Waggle Experts" are all certified to take care of pets and have been checked for any allergies to any dog breed.</p>
+
+</div>
+
+<br>
+
+<!--Process-->
+
+<!--Clear instructions should be given about how the business works. These step by step instructions are in an ordered list because having them in numberless bullet points may be confusing for users. It has a different background color than the rest of the page to denote a different section and to emphasize its importance. That way, when a user is navigating through the site, they'll know the section that has the steps.-->
+
+<h2>How does this work?</h2>
+
+<div class = "how">
+
+	<h3><i>Here are step by step instructions on how the entire process works:</i></h3>
+
+	<ol>
+		<li>You can either visit our care center with your companion and speak to a caretaker or one of our professional caretakers, known as Waggle Experts, will come to your house. </li><br>
+
+		<li>After consulting with a Waggle Expert, if you decide you want to purchase a Care Package, you may purchase a package from this site or from our care center.</li><br>
+
+		<li>A Waggle Expert will call to ask an appropriate time and date to start. The starting date will be when the Care Package becomes active.</li><br>
+
+		<li>Once you confirm the starting time, the Waggle Expert will arrive to pick up your companion! Your companion will be returned to the home at a specified time as well.</li><br>
+
+		<li>After the first week, the Waggle Expert will contact you to create an optional weekly plan for your companion. This is when you can tell the Waggle Expert what kind of tricks you want your companion to learn! (If you have already discussed this with your Waggle Expert in Step 2, then they will review what you have already discussed.) </li><br>
+
+		<li>At the end of each week, a weelky update sheet will be emailed to you showing what has been done and what the plan for the next week will be. These can be changed at anytime.</li><br>
+
+		<li>Once the care period ends, your companion will be brought back to you and a review of everything your companion has learned. You can renew your Care Package and continue with the same weekly plans.</li><br>
+
+	</ol>
+
+</div>
+
+<br>
+
+<div id="Packages" class = "package">
+
+<!--Care Packages Table-->
+
+<!--A table was used in order to separate each type of package. They each were color coded on the table headings to have easier differentiation. A purchase button was placed on each package so that user can immediately buy the product desired on the purchase page. -->
+
+	<h2>Care Packages</h2>
+
+	<table>
+		<tr>
+			<th bgcolor="Lime";><i><b>The Pug Patrol (Basic)</b></i></th>
+			<th bgcolor="LightYellow"><i><b>The Husky Hustle (Premium)</b></i></th>
+			<th bgcolor="Gold"><i><b>The Dachshund Dream (Ultimate)</b></i></th>
+		</tr>
+		<tr bgcolor = "Snow">
+			<td>
+				<img src = "P1.jpg" width = 100 height = 100>
+
+				<p><i><b>$44.99</b></i></p>
+
+				<ul>
+					<li>3 Months of Care</li>
+					<li>1 Trick Trained</li>
+					<li>One Free Dog Food Voucher</li>
+					<li>One Free Veternarian Visit</li>
+				</ul>
+
+				<button type"button" onclick= "window.location.href= 'Purchase.html'">Purchase</button>
+			</td>
+
+			<td>
+				
+				<img src = "H2.jpg" width = 100 height = 100>
+
+					<p><i><b>$79.99</b><br><sub>Save $10!*</sub></i></p>
+
+					<ul>
+						<li>6 Months of Care</li>
+						<li>Up to 3 Tricks Trained</li>
+						<li>2 Free Dog Food Vouchers</li>
+						<li>2 Free Veternarian Visits</li>
+					</ul>
+
+					<button type"button" onclick="window.location.href='Purchase.html'">Purchase</button>
+			</td>
+			<td>
+				<img src = "D4.jpg" width = 100 height = 100>
+				<p><i><b>$159.99</b><br><sub>Save $20!*</sub></i></p>
+					
+				<ul>
+					<li>1 Year of Care</li>
+					<li>Up to 5 Tricks Trained</li>
+					<li>Unlimited Dog Food Vouchers</li>
+					<li>Unlimited Free Veternarian Visits</li>
+				</ul>
+
+				<button type"button" onclick="window.location.href='Purchase.html'">Purchase</button>
+
+			</td>
+		</tr>
+	</table>
+	
+	<p>*Note:Savings are in comparison to the Pug Patrol (Basic) package.</p>
+
+</div>
+
+<!--Each package has its own distinct name to make it more memorable to the user. Otherwise, the generic "Basic", "Premium", and "Ultimate" may become forgettable. -->
+
+<br>
+
+<hr>
+
+<!--FAQ-->
+
+<!--User will have many questions about this type of service. This section was made in hopes to cover most of the questions. Otherwise, they can contact the business directly through the link.-->
+
+<div id="FAQ", class ="faq">
+
+	<br>
+
+	<h2>Frequently Asked Questions</h2>
+
+	<h3>What type of care do you provide?</h3>
+
+	<p>We feed, walk, bathe, and play with dogs. We also monitor their health and inform you immediately of anything they may have contracted.</p>
+
+	<h3>What are Care Packages?</h3>
+
+	<p>Care Packages are subscription packs to our service. There are currently three different types of Care Packages that you may purchase. Each provide different levels of care from each other. You can find them <a href = "#Packages">here.</a></p>
+
+	<h3>Can I cancel my Care Package at anytime?</h3>
+
+	<p>You may cancel at any time! You will only get refunded for the remaining weeks left of your Care Package.</p>
+
+	<h3>What will happen to my vouchers once I cancel my subscription?</h3>
+
+	<p>Unfortunately, you will be unable to use them once you cancel.</p>
+
+	<h3>Can I upgrade my Care Package at anytime?</h3>
+
+	<p>Yes you can! Contact your Waggle Expert for more information on how to upgrade</p>
+
+	<h3>Do these packages apply to other pets besides dogs?</h3>
+
+	<p>Not yet! But we do hope to include more companions in the near future!</p>
+
+	<h3>Is there a limit to the amount of dogs each Care Package covers?</h3>
+
+	<p>Each Care Package can only cover a maximum of two dogs per package. Additional dogs will require another Care Package purchase.</p>
+
+	<h3>Is there a minimum/maximum age each Package covers?</h3>
+
+	<p>Dogs must be at least 1 year old in order to be covered. The maximum age is at least less than 4 years younger than the average life expectancy based on their <a href = "http://www.dogbreedslist.info/all-dog-breeds/"><strong> breed</strong></a>. These senior dogs are given a 25% discount!</p>
+
+	<p><a href = Contact.html>If you have any other questions, please contact us through this link.</a></p>
+
+	<br>
+
+</div>
+
+<!--Both the change of background color and the <hr> tag serve to show a different section of the site. The background color doesn't clash with the site background so that it isn't jarring for the user to see. The breed link to an external site will help users know what type of dog they have and the site gives all of the information they need about their dog. -->
+
+<hr>
+
+<!--About Me Section-->
+
+<h2 id="AboutMe">About Me</h2>
+
+<div class = "aboutme">
+
+	<img src="Ricky.jpg"  width = 350 height = 350>
+	
+	<br>
+
+	<h3>Pet Caring</h3>
+
+	<p> One thing I like to do in my free time is to take care of some of my neighbor's dogs. Sometimes, my neighbors would go on vacation and cannot bring their dogs with them. In order to have someone they trust care for their dog, they would call me first. While they are away I would walk, feed, and play with the dog while giving the owners daily updates on how their dog is doing. Lately, I have been attempting to apply to apps that will let me be a dog sitter part-time while I attend college. </p>
+
+	<img src="Ricky1.jpg" alt="Dachshund Ricky Laying Down" width = 800 height = 450>
+
+	<br>
+	
+	<a href = Contact.html>For more information</a>
+
+	<br>
+
+<!--This paragraph contains the dog that I do take care of and a link to the contact us page for more information. The contact page includes my "personal" contact information for people to use. Each link directing to custom external sites can link back to this page.-->
+
+	<h3>Storywriting</h3>
+
+	<p>Another hobby I love doing in my spare time is writing stories. Most of the stories I like to write involve breaking some sort of trope or norm that other stories typically do. It is either that or creating a unique style of storytelling (For example, while more stories have been doing this as of late, an omni-present narrator that constantly has arguments back and forth to the protagonist while every other character is aware of the narrator). With each story I make, I like to give myself little challenges so that I could write something unique that others would enjoy. This also helps me to avoid repeating similar stories that I have read or created before. </p>
+
+	<img src="Story.jpg"  width = 800 height = 400>
+
+	<br>
+
+	<a href = Contact.html>For more information about my scripts</a>
+
+<!--This section links to my personal contact page as well, in case someone wants to get in touch about scripts somehow. Each link directing to custom external sites can link back to this page.-->
+
+	<br>
+
+	<h3>The Gaming Goal</h3>
+
+	<p>Ever since I picked up a Sega Dreamcast controller as a child, I have always wanted my career to involve games in some way. At first, that goal was only limited to making money from testing them. After many, many hours of playing games and experiencing/learning many lessons from them, my goal changed to creating games that would give others a similar experience to what I had growing up. I wanted others to start getting lost in the world of games, to share their experience with others and become friends, to vent their sorrows and find answers to questions that they may have had. All of this and more is what I want others to feel. At least, I hope they do. Once I felt joy that I have never experienced before from creating a simple block breaking game, I knew this was my life passion. </p>
+
+	<img src = "RPGGame.png" alt = "First small RPG game I created using RPG maker" width = 800 height = 400>
+
+	<br>
+
+	<a href = Game.html>For more information on my gaming projects</a>
+
+<!--This link would redirect to my personal game design site but for now it is under construction. Each link directing to custom external sites can link back to this page.-->
+
+</div>
+
+<br>
+
+<hr>
+
+<br>
+
+<div style = "text-align:center;">
+
+	<a href = #Top>Return to top of page</a>
+
+	<br>
+	
+	<br>
+
+	<a href="https://twitter.com/CapitanDolphin"  class="twitter-follow-button" data-size="large" data-show-count="false" >Follow @CapitanDolphin <script async src="https://platform.twitter.com/widgets.js"></script></a>
+
+	<br>
+
+</div>
+
+<!--Users should be able to navigate various spots on the site very quickly. Once they reach the bottom, they should be able to quickly reach the top without scrolling and navigate to a section of the site that they found interest in.-->
+
+<br>	
+
+</body>
+
+</html>
